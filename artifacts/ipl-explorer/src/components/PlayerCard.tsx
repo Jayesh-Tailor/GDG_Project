@@ -50,6 +50,7 @@ export default function PlayerCard({ player, team, onClick }: PlayerCardProps) {
                 src={player.image}
                 alt={player.name}
                 className="w-full h-full object-cover object-top"
+                referrerPolicy="no-referrer"
                 onError={(e) => {
                   const el = e.target as HTMLImageElement;
                   el.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(player.name)}&background=${team.primaryColor.replace("#", "")}&color=fff&size=128`;

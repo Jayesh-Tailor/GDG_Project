@@ -43,6 +43,7 @@ function PlayerPicker({
               src={player.image}
               alt={player.name}
               className="w-7 h-7 rounded-lg object-cover object-top flex-shrink-0"
+              referrerPolicy="no-referrer"
               onError={(e) => {
                 const el = e.target as HTMLImageElement;
                 el.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(player.name)}&background=${team.primaryColor.replace("#","")}&color=fff&size=64`;
