@@ -1,0 +1,206 @@
+You are a senior full-stack engineer.
+
+Build a complete production-ready web app for IPL player exploration with a clean, modern UI and scalable structure.
+
+⚙️ TECH STACK:
+- Frontend: React (with Vite)
+- Styling: Tailwind CSS
+- State: useState / useEffect (no Redux)
+- Routing: React Router
+- Data: Start with a local JSON file (mock data for IPL teams and players)
+- No backend required initially
+
+--------------------------------------
+
+📱 APP FLOW:
+
+1. HOME PAGE (Teams Grid)
+- Display all IPL teams as rectangular cards
+- Each card includes:
+  - Team logo
+  - Team name
+- Responsive grid layout
+- On click → navigate to `/team/:teamName`
+
+2. TEAM PAGE (Players Grid)
+- Show all players of selected team
+- Each player card includes:
+  - Player image
+  - Name
+  - Role
+- Add search bar (filter by name)
+- Add filter by role
+- Click player → open detailed player view (modal or separate page)
+
+3. PLAYER DETAIL CARD (MOST IMPORTANT)
+
+This must be visually rich, structured, and not cluttered.
+
+--------------------------------------
+
+🔹 BASIC INFO
+- Name
+- Age
+- Role (Batsman / Bowler / All-rounder / WK)
+- Team
+- Batting style
+- Bowling style
+
+--------------------------------------
+
+📊 CORE STATS
+
+Batting:
+- Runs
+- Average
+- Strike Rate
+- Highest Score
+- 50s / 100s
+
+Bowling:
+- Wickets
+- Economy
+- Best Figures
+- Bowling Average
+
+--------------------------------------
+
+📈 RECENT FORM
+- Last 5 matches (array like [34, 12, 78, 0, 45])
+- Add visual indicator:
+  - Good = green / 🔥
+  - Bad = red / ❄️
+
+--------------------------------------
+
+🔥 KEY HIGHLIGHTS
+- Best IPL season
+- Career-high performance
+- Awards (Orange Cap, Purple Cap, etc.)
+
+--------------------------------------
+
+🧠 SMART INSIGHTS
+- Strengths (e.g. "Powerplay hitter")
+- Weaknesses (e.g. "Struggles vs spin")
+- Role tag (Finisher / Anchor / Death bowler)
+
+--------------------------------------
+
+🆚 MATCH CONTEXT
+- Performance vs top teams
+- Home vs away stats
+
+--------------------------------------
+
+⚡ IMPACT METRICS
+- Strike rate in death overs
+- Dot ball % (for bowlers)
+- Boundary %
+
+--------------------------------------
+
+🎯 FANTASY ANGLE
+- Fantasy points rating
+- Consistency score
+
+--------------------------------------
+
+🎨 UI EXTRAS
+- Real player image
+- Team-colored gradient theme
+- Rating (⭐ out of 5)
+
+--------------------------------------
+
+🚀 OPTIONAL (if time)
+- Injury status
+- Playing probability
+- Compare Players button
+
+--------------------------------------
+
+🎨 UI/UX REQUIREMENTS:
+- Clean modern design (dark theme preferred)
+- Use Tailwind properly (spacing, shadows, rounded-xl cards)
+- Smooth hover effects (scale, glow)
+- Transitions and animations
+- Responsive across all devices
+- Use sections/tabs inside player card to avoid clutter:
+  (Stats | Insights | Form | Highlights)
+
+--------------------------------------
+
+🧩 BONUS FEATURES:
+- Compare Players (select 2 players → side-by-side stats)
+- Smooth modal animations
+- Loading skeletons
+
+--------------------------------------
+
+📁 PROJECT STRUCTURE:
+- components/
+  - TeamCard.jsx
+  - PlayerCard.jsx
+  - PlayerDetailModal.jsx
+  - ComparePlayers.jsx
+  - Navbar.jsx
+- pages/
+  - Home.jsx
+  - TeamPage.jsx
+- data/
+  - data.json
+
+--------------------------------------
+
+📦 DATA:
+- Create mock JSON with:
+  - 3–4 IPL teams
+  - 5–6 players per team
+- Include realistic stats and all required fields
+
+--------------------------------------
+
+🌐 FUTURE DATA INTEGRATION (IMPORTANT):
+Design the app in a way that data can later be replaced with real APIs.
+
+Mention how to integrate:
+- CricAPI
+- ESPNcricinfo (API or scraping)
+- Kaggle IPL datasets
+
+Ensure:
+- Data fetching logic is easily replaceable
+- Keep a separate data service file (e.g. api.js)
+
+--------------------------------------
+
+🧾 OUTPUT FORMAT:
+- Provide COMPLETE runnable code:
+  - package.json
+  - main.jsx
+  - App.jsx
+  - all components
+  - all pages
+  - data.json
+- No missing files
+- No partial snippets
+
+--------------------------------------
+
+⚠️ IMPORTANT RULES:
+- Do NOT skip any feature
+- Do NOT give partial code
+- Ensure app runs with:
+  npm install
+  npm run dev
+- Keep code clean, modular, and readable
+- Use best practices for React
+
+--------------------------------------
+
+After generating the code, also:
+- Review the code like a senior engineer
+- Fix bugs
+- Improve UI/UX
+- Suggest improvements
